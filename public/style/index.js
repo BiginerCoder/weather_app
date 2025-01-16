@@ -100,7 +100,7 @@ function updateWeatherUI(data, uvData) {
   weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather Icon">`;
   temperature.innerHTML = `${data.main.temp} &deg;C`;
   feelsLike.innerHTML = `Feels like: ${data.main.feels_like} &deg;C`;
-  date.innerHTML = `${formatDate2(data.dt)}`;
+  date.innerHTML = `${formatDate(data.dt)}`;
   description.innerHTML = `<i class="fa-brands fa-cloudversify" <i>  &nbsp; ${data.weather[0].description}`;
   Hvalue.innerHTML = `${data.main.humidity}%`;
   WNvalue.innerHTML = `${data.wind.speed} m/s`;

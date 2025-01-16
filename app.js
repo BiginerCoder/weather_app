@@ -14,7 +14,7 @@ app.set('views', path.join(__dirname, 'views')); // Set views directory
 
 // Routes
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+   res.render("main/index", { apiKey: process.env.API_KEY }); 
 });
 
 app.get('/weather_app', (req, res) => {

@@ -1,0 +1,142 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.weather-input{
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(0, 195, 255);
+    padding: 1rem 2.5rem;
+
+}
+.weather-input hr{
+ margin: 10px 0px;
+ color: #909090;
+}
+
+.input-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem, 0;
+}
+
+.input-group input{
+   background-color: white;
+   text-transform: capitalize;
+   padding: 1rem;
+   font-size: 15px;
+   border-radius: 6px;
+   width: 100%;
+   border: none;
+    outline: none;
+}
+
+.input-group .converter{
+   position: absolute;
+   right: 45px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.input-group .fa-search{
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: #909090;
+    border: none;
+    outline: none;
+    font-size: 22px;
+}
+.weatherIcon img{
+ position: relative;
+ left: 30%;
+}
+.weather-input .weatherIcon,
+.weather-input .feelsLike,
+.weather-input .description,
+.weather-input .temperature,
+.weather-input .locate{
+    padding: 10px 0px;
+    font-weight: 300;
+}
+.temperature{
+    font-size: 5rem;
+    
+    display: flex;
+    text-align: center;
+}
+.weather-output{
+   width: 70%;
+   position: absolute;
+   left: 30%;
+   padding: 2rem;
+   overflow: auto;
+}
+.highlight{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    grid-auto-flow: row;
+    gap: 10px;
+    row-gap: 1rem;
+}
+.highlight div{
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 195, 255);
+    border-radius: 20px;
+    padding: 1rem;
+
+}
+.highlight i{
+    font-size: 45px;
+}
+.sun span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.forcast{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 10px;
+    row-gap: 1rem;
+    
+}
+.forcast div{
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 195, 255);
+    border-radius: 20px;
+    padding: 1rem;
+    
+}
+.forcast i{
+    font-size: 45px;
+}
